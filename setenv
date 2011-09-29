@@ -1,0 +1,6 @@
+export GOROOT=$PWD/go
+export GOOS=linux
+export GOARCH=amd64
+export GOBIN=$PWD/bin/
+export GOHOSTOS=linux
+export GOHOSTARCH=amd64
