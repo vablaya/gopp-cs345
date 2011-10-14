@@ -1,6 +1,6 @@
-export GOROOT=$PWD/go
+export GOROOT=$HOME/go++/go
 export GOOS=linux
-export GOARCH=amd64
-export GOBIN=$PWD/bin/
+export GOARCH=386
+export GOBIN=$HOME/go++/bin
 export GOHOSTOS=linux
-export GOHOSTARCH=amd64
+export GOHOSTARCH=386
