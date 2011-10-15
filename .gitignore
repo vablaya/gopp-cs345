@@ -12,6 +12,7 @@ bin/
 #*
 *#
 *.elc
+*.bin
 
 go/src/cmd/6a/6a
 go/src/cmd/6a/y.tab.c

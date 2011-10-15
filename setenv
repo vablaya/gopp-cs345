@@ -4,3 +4,5 @@ export GOARCH=386
 export GOBIN=$HOME/go++/bin
 export GOHOSTOS=linux
 export GOHOSTARCH=386
+
+export PATH=$GOBIN:$PATH
