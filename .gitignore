@@ -34,5 +34,15 @@ go/src/cmd/godefs/godefs
 go/src/cmd/gopack/gopack
 go/src/cmd/nm/6nm
 go/src/cmd/prof/6prof
+go/src/cmd/gc/yerr.h
+cmd/8l/enam.c
+cmd/cc/y.tab.c
+cmd/cc/y.tab.h
+cmd/gc/builtin.c
+cmd/gc/opnames.h
+cmd/gc/y.tab.c
+cmd/gc/y.tab.h
+cmd/gc/y1.tab.c
+cmd/gc/yerr.h
 watch_build.txt
 
