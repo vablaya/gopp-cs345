@@ -46,3 +46,20 @@ cmd/gc/y1.tab.c
 cmd/gc/yerr.h
 watch_build.txt
 
+go/pkg/
+go/src/cmd/8a/8a
+go/src/cmd/8a/y.tab.c
+go/src/cmd/8a/y.tab.h
+go/src/cmd/8c/8c
+go/src/cmd/8g/8g
+go/src/cmd/8l/8l
+go/src/cmd/8l/enam.c
+go/src/cmd/gc/y1.tab.c
+go/src/pkg/compress/bzip2/8.out
+go/src/pkg/compress/bzip2/_testmain.go
+go/src/pkg/compress/bzip2/test.out
+go/src/pkg/runtime/386/asm.h
+go/src/pkg/runtime/goc2c
+go/src/pkg/runtime/mkversion
+go/src/pkg/runtime/runtime.acid.386
+go/src/pkg/runtime/runtime_defs.go
