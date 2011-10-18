@@ -63,3 +63,11 @@ go/src/pkg/runtime/goc2c
 go/src/pkg/runtime/mkversion
 go/src/pkg/runtime/runtime.acid.386
 go/src/pkg/runtime/runtime_defs.go
+
+go/doc/codelab/wiki/htmlify.bin
+go/doc/codelab/wiki/srcextract.bin
+go/misc/dashboard/builder/_go_.6
+go/misc/dashboard/builder/gobuilder
+go/misc/goplay/_go_.6
+go/misc/goplay/goplay
+go/test/times.out
