@@ -71,3 +71,7 @@ go/misc/dashboard/builder/gobuilder
 go/misc/goplay/_go_.6
 go/misc/goplay/goplay
 go/test/times.out
+
+go/src/pkg/big/8.out
+go/src/pkg/big/_testmain.go
+go/src/pkg/big/test.out
