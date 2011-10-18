@@ -75,3 +75,7 @@ go/test/times.out
 go/src/pkg/big/8.out
 go/src/pkg/big/_testmain.go
 go/src/pkg/big/test.out
+go/src/cmd/ebnflint/ebnflint
+go/src/pkg/sync/8.out
+go/src/pkg/sync/_testmain.go
+go/test/bench/8.out
