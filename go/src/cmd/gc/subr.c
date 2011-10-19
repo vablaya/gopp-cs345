@@ -222,11 +222,19 @@ yyerror(char *fmt, ...)
 }
 
 void
+yywarnl(int line, char *fmt, ...) {
+  va_list arg;
+  va_start(arg, fmt);
+  addwarn(line, fmt, arg);
+  va_end(arg);
+}
+
+void
 yywarn(char *fmt, ...) // this is holding "%S unused, -> symbol"
 {
   va_list arg;
   va_start(arg, fmt);
-  addwarn(parserline(), fmt, arg); //new
+  addwarn(parserline(), fmt, arg);
   va_end(arg);
 }
 
@@ -426,7 +434,7 @@ importdot(Pkg *opkg, Node *pack)
 	}
 	if(n == 0) {
 		// can't possibly be used - there were no symbols
-		yyerrorl(pack->lineno, "imported and not used: %Z", opkg->path);
+      yywarnl(pack->lineno, "unused import: %Z", opkg->path);
 	}
 }
 

@@ -1173,6 +1173,7 @@ void	warn(char *fmt, ...);
 void	yyerror(char *fmt, ...);
 void	yyerrorl(int line, char *fmt, ...);
 void    yywarn(char *fmt, ...);
+void    yywarnl(int line, char *fmt, ...);
 
 /*
  *	swt.c

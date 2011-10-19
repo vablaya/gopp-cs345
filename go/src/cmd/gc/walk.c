@@ -99,7 +99,6 @@ walk(Node *fn)
 	}
 }
 
-
 void
 walkstmtlist(NodeList *l)
 {
