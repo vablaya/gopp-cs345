@@ -1172,6 +1172,7 @@ void	umagic(Magic *m);
 void	warn(char *fmt, ...);
 void	yyerror(char *fmt, ...);
 void	yyerrorl(int line, char *fmt, ...);
+void    yywarn(char *fmt, ...);
 
 /*
  *	swt.c

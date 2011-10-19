@@ -80,8 +80,9 @@ walk(Node *fn)
 			continue;
 		lineno = n->lineno;
 		typecheck(&n, Erv | Easgn);	// only needed for unused variables
-		if(!n->used && n->sym->name[0] != '&' && !nsyntaxerrors)
-			yyerror("%S declared and not used", n->sym);
+		if(!n->used && n->sym->name[0] != '&' && !nsyntaxerrors) {
+          yywarn("%S declared and not used", n->sym);
+        }
 	}
 	lineno = lno;
 	if(nerrors != 0)

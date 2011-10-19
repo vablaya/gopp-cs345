@@ -21,6 +21,17 @@ static Error *err;
 static int nerr;
 static int merr;
 
+// TODO: rainy-day, make warnings work like errors rather than flushing imm.
+/* typedef struct Warning Warning; */
+/* struct Warning */
+/* { */
+/*   int lineno; */
+/*   char *msg; */
+/* }; */
+/* static Warning *warns; */
+/* static int nwarns; */
+/* static int mwarns; */
+
 void
 errorexit(void)
 {
@@ -70,6 +81,19 @@ adderr(int line, char *fmt, va_list arg)
 	err[nerr].lineno = line;
 	err[nerr].msg = fmtstrflush(&f);
 	nerr++;
+}
+
+static void
+addwarn(int line, char* fmt, va_list arg)
+{
+  Fmt f;
+  fmtstrinit(&f);
+  fmtprint(&f, "WARNING: %L: ", line);
+  fmtvprint(&f, fmt, arg);
+  fmtprint(&f, "\n");
+  char* mess = fmtstrflush(&f);
+
+  print("%s", mess);
 }
 
 static int
@@ -185,7 +209,7 @@ yyerror(char *fmt, ...)
 	}
 
 	va_start(arg, fmt);
-	adderr(parserline(), fmt, arg);
+	adderr(parserline(), fmt, arg); // i'm guessing parserline is line#
 	va_end(arg);
 
 	hcrash();
@@ -195,6 +219,15 @@ yyerror(char *fmt, ...)
 		print("%L: too many errors\n", parserline());
 		errorexit();
 	}
+}
+
+void
+yywarn(char *fmt, ...) // this is holding "%S unused, -> symbol"
+{
+  va_list arg;
+  va_start(arg, fmt);
+  addwarn(parserline(), fmt, arg); //new
+  va_end(arg);
 }
 
 void

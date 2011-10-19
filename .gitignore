@@ -11,6 +11,7 @@ bin/
 ~*
 #*
 *#
+.#*
 *.elc
 *.bin
 
@@ -79,3 +80,8 @@ go/src/cmd/ebnflint/ebnflint
 go/src/pkg/sync/8.out
 go/src/pkg/sync/_testmain.go
 go/test/bench/8.out
+
+go/cmd/gc/.#go.h
+go/src/pkg/archive/zip/8.out
+go/src/pkg/archive/zip/_testmain.go
+go/src/pkg/archive/zip/test.out
