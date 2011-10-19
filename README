@@ -1,3 +1,15 @@
 Go++
 
-A CS345 project in 2011 at the University of Texas at Austin
+A CS345 project
+University of Texas at Austin
+Seth Hoenig, Vanessa Ablaya, Tuan Pham
+
+Current Features:
+    - Warnings on unused variables instead of errors
+
+Upcoming Features:
+    - Warnings on unused packages instead of errors
+    - Ternary Operator
+    - Syntax for multi-dimensional array creation
+    - Type agnostic functions
+    - Type agnostic structs
